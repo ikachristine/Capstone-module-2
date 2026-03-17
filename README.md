@@ -1,27 +1,27 @@
-# 📊 Early Warning System for At-Risk Customers (SaaS)
+# Early Warning System for At-Risk Customers (SaaS)
 
-## 🚀 Executive Summary
+## Executive Summary
 Project ini bertujuan membangun sistem **early warning** untuk mendeteksi pelanggan yang berpotensi churn menggunakan pendekatan **recency (aktivitas terakhir pelanggan)**.
 
 ### Key Insights:
-- 📉 **6.38% customer teridentifikasi sebagai at-risk**
-- 🧩 Seluruh risiko terkonsentrasi pada **segmen SMB**
-- 🌍 Risiko tertinggi berada di **region EMEA**
-- 💰 Customer at-risk masih memiliki kontribusi revenue → **perlu intervensi cepat**
+-  **6.38% customer teridentifikasi sebagai at-risk**
+-  Seluruh risiko terkonsentrasi pada **segmen SMB**
+-  Risiko tertinggi berada di **region EMEA**
+-  Customer at-risk masih memiliki kontribusi revenue → **perlu intervensi cepat**
 
 ### Business Impact:
 Tanpa tindakan proaktif, customer at-risk berpotensi berhenti bertransaksi dan menyebabkan penurunan revenue. Oleh karena itu, diperlukan sistem monitoring dan strategi retensi berbasis risiko.
 
 ---
 
-## 🧠 Background
+##  Background
 Dalam bisnis SaaS (Software as a Service), mempertahankan pelanggan (retention) merupakan faktor kunci keberhasilan. Namun, tidak semua pelanggan yang akan churn dapat terdeteksi secara langsung.
 
 Pada dataset ini, tidak terdapat churn eksplisit, sehingga digunakan pendekatan **early warning berbasis perilaku transaksi**, khususnya melalui analisis **recency (jarak waktu sejak transaksi terakhir)**.
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 Perusahaan belum memiliki indikator yang jelas untuk:
 - Mengidentifikasi pelanggan yang mulai tidak aktif
 - Menentukan segmen dan wilayah dengan risiko tertinggi
@@ -29,7 +29,7 @@ Perusahaan belum memiliki indikator yang jelas untuk:
 
 ---
 
-## ❓ Business Questions
+##  Business Questions
 1. Bagaimana distribusi customer berdasarkan tingkat risiko (recency)?
 2. Siapa saja customer yang paling berisiko dan berapa nilai bisnisnya?
 3. Segmen pelanggan mana yang memiliki risiko tertinggi?
@@ -38,7 +38,7 @@ Perusahaan belum memiliki indikator yang jelas untuk:
 
 ---
 
-## 📂 Dataset
+##  Dataset
 Dataset berisi data transaksi customer SaaS yang mencakup:
 - Customer ID
 - Order Date
@@ -48,19 +48,19 @@ Dataset berisi data transaksi customer SaaS yang mencakup:
 
 ---
 
-## 🧹 Data Cleaning
+##  Data Cleaning
 Proses data cleaning dilakukan untuk memastikan kualitas data sebelum analisis:
 
-- ✔️ Tidak ditemukan missing values  
-- ✔️ Tidak ditemukan duplicate data  
-- ✔️ Validasi kategori menunjukkan data konsisten  
-- ✔️ Tidak ditemukan whitespace (leading/trailing spaces)  
-- ✔️ Nilai numerik berada dalam rentang yang wajar  
-- ✔️ Profit negatif dipertahankan karena relevan dalam konteks bisnis  
+-  Tidak ditemukan missing values  
+-  Tidak ditemukan duplicate data  
+-  Validasi kategori menunjukkan data konsisten  
+-  Tidak ditemukan whitespace (leading/trailing spaces)  
+-  Nilai numerik berada dalam rentang yang wajar  
+-  Profit negatif dipertahankan karena relevan dalam konteks bisnis  
 
 ---
 
-## ⚙️ Feature Engineering
+##  Feature Engineering
 Untuk mendeteksi potensi churn, dibuat beberapa fitur utama:
 
 - **Last Purchase Date**
@@ -73,7 +73,7 @@ Untuk mendeteksi potensi churn, dibuat beberapa fitur utama:
 
 ---
 
-## 📊 Key Metrics
+##  Key Metrics
 - Risk Rate: **6.38%**
 - Total At-Risk Customers: **3**
 - Segmen Risiko Tertinggi: **SMB**
@@ -81,7 +81,7 @@ Untuk mendeteksi potensi churn, dibuat beberapa fitur utama:
 
 ---
 
-## 📊 Key Findings
+##  Key Findings
 
 ### 1. Distribusi Risiko
 Mayoritas customer masih berada pada kategori **Active dan Warm**, menunjukkan kondisi pelanggan relatif sehat. Namun, terdapat customer dalam kategori **At-risk dan High Risk** yang menjadi early warning terhadap potensi churn.
@@ -111,7 +111,7 @@ Risiko terkonsentrasi pada region **EMEA**, menunjukkan perlunya pendekatan rete
 
 ---
 
-## 💡 Business Recommendations
+##  Business Recommendations
 
 ### 1. Implement Early Warning System (Watchlist)
 Membangun monitoring mingguan untuk customer at-risk agar tidak terlewat tanpa tindakan.
@@ -135,7 +135,7 @@ Mengurangi ketergantungan pada diskon dan beralih ke pendekatan value-based.
 
 ---
 
-## 📈 KPI yang Disarankan
+##  KPI yang Disarankan
 - Penurunan jumlah customer At-risk & High risk  
 - Peningkatan retention rate (terutama SMB)  
 - Penurunan churn di region EMEA  
@@ -143,28 +143,19 @@ Mengurangi ketergantungan pada diskon dan beralih ke pendekatan value-based.
 
 ---
 
-## 📸 Project Preview
+##  Project Preview
 *(Tambahkan screenshot dashboard / visualisasi di sini jika ada)*
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 - Python (Pandas, NumPy, Seaborn, Matplotlib)
 - Jupyter Notebook
-- Tableau
+- Tableau  
 
 ---
 
-## 🔗 Links
-- Notebook: *(tambahkan link jika ada)*  
-- Dashboard: *(tambahkan link jika ada)*  
-
----
-
-## 📌 Conclusion
+##  Conclusion
 Meskipun tingkat risiko saat ini masih relatif rendah, keberadaan customer at-risk merupakan **early warning signal** yang penting. Risiko yang terkonsentrasi pada segmen SMB dan region EMEA menunjukkan perlunya strategi retensi yang lebih terarah dan proaktif untuk menjaga keberlanjutan bisnis.
 
 ---
-
-## 👤 Author
-**Ika Christine Purba**
